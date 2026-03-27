@@ -6,6 +6,8 @@ let botaoBom = document.getElementById("btn-bom");
 let botaoRegular = document.getElementById("btn-regular");
 let botaoRuim = document.getElementById("btn-ruim");
 let textoAgradecimento = document.getElementById("mensagem-agradecimento");
+let textoContagemVotos = document.getElementById("total-votos");
+
 
 botaoBom.addEventListener("click", function(){
     votosBom = votosBom + 1;
@@ -14,7 +16,7 @@ botaoBom.addEventListener("click", function(){
     setTimeout(function(){
         textoAgradecimento.innerText = "";
     }, 3000);
-
+    atualizarPainelDoGerente();
 });
 
 botaoRegular.addEventListener("click", function(){
@@ -24,6 +26,7 @@ botaoRegular.addEventListener("click", function(){
     setTimeout(function(){
         textoAgradecimento.innerText = "";
     }, 4000);
+    atualizarPainelDoGerente();
 });
 
 botaoRuim.addEventListener("click", function(){
@@ -33,4 +36,11 @@ botaoRuim.addEventListener("click", function(){
     setTimeout(function(){
         textoAgradecimento.innerText = "";
     }, 5000);
-})
+    atualizarPainelDoGerente();
+});
+
+function atualizarPainelDoGerente(){
+    let totalDeVotos = votosBom + votosRegular + votosRuim;
+    textoContagemVotos.innerText = "A contagem total de votos é " + totalDeVotos;
+}
+
