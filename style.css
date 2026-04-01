@@ -1,13 +1,54 @@
 body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #e0f7fa; 
 }
 
-button{
-    font-size: 24px;
-    padding: 20px 40px;
-    margin: 15px;
-    border-radius: 10px;
+h1{
+    text-align: center;
+    font-size: 48px;
+}
+
+.area-botoes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-avaliacao{
+    width: 220px;
+    height: 180px;
+    border-radius: 40px;
+    font-size: 100px;
+    border: none;
     cursor: pointer;
+}
+
+#btn-pessimo{
+    background-color: #FF4B4B;
+}
+
+#btn-ruim{
+    background-color: #FF8C00;
+}
+
+#btn-neutro{
+    background-color: #FFD700;
+}
+
+#btn-bom{
+    background-color: #90EE90;
+}
+
+#btn-excelente{
+    background-color: #32CD32;
+}
+
+#tela-nps, #tela-agradecimento{
+    display: none;
 }

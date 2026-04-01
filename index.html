@@ -7,14 +7,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Como você avalia nosso atendimento?</h1>
+    <div id="tela-csat">
+        <h1>Como você avalia nosso atendimento?</h1>
 
-    <button id = "btn-ruim">Ruim</button>
-    <button id = "btn-regular">Regular</button>
-    <button id = "btn-bom">Bom</button>
+        <div class="area-botoes">
+            <button id = "btn-pessimo" class = "btn-avaliacao">😡</button>
+            <button id = "btn-ruim" class = "btn-avaliacao">😟</button>
+            <button id = "btn-neutro" class = "btn-avaliacao">😐</button>
+            <button id = "btn-bom" class = "btn-avaliacao">🙂</button>
+            <button id = "btn-excelente" class = "btn-avaliacao">😁</button>
 
-    <p id="mensagem-agradecimento"></p>
-    <p id="total-votos"></p>
+        </div>
+    </div>
+
+    <div id="tela-nps">
+        <h1>Em uma escala de 0 a 10, o quanto você recomendaria a nossa loja?</h1>
+
+        <div class="area-botoes-nps">
+            <button id = "btn-0" class= "btn-nps">0</button>
+            <button id = "btn-1" class= "btn-nps">1</button>
+            <button id = "btn-2" class= "btn-nps">2</button>
+            <button id = "btn-3" class= "btn-nps">3</button>
+            <button id = "btn-4" class= "btn-nps">4</button>
+            <button id = "btn-5" class= "btn-nps">5</button>
+            <button id = "btn-6" class= "btn-nps">6</button>
+            <button id = "btn-7" class= "btn-nps">7</button>
+            <button id = "btn-8" class= "btn-nps">8</button>
+            <button id = "btn-9" class= "btn-nps">9</button>
+            <button id = "btn-10" class= "btn-nps">10</button>
+        </div>
+    </div>
+
+    <div id="tela-agradecimento">
+        <h1>Obrigado pela sua avaliação!</h1>
+    </div>
 
     <script src="script.js"></script>
 </body>
